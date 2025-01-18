@@ -13,9 +13,9 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 @NgModule({
   declarations: [
     AboutPageComponent,
+    ContactPageComponent,
     HomePageComponent,
     SidebarComponent,
-    ContactPageComponent
   ],
   imports: [
     CommonModule,
@@ -23,9 +23,9 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
   ],
   exports: [
     AboutPageComponent,
+    ContactPageComponent,
     HomePageComponent,
     SidebarComponent,
-    ContactPageComponent
   ]
 })
 export class SharedModule { }
