@@ -11,6 +11,8 @@
 .table {
   margin-bottom: 0;
   background-color: #f8f9fa;
+  table-layout: fixed;
+  width: 100%;
 }
 
 .table thead th {
@@ -22,6 +24,59 @@
   font-weight: 500;
   border: none;
   z-index: 1;
+}
+
+/* Anchos de columna ajustados */
+.table th:nth-child(1),
+.table td:nth-child(1) { /* # */
+  width: 5%;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) { /* Icon */
+  width: 7%;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) { /* Bandera */
+  width: 10%; /* Aumentado para que quepa la palabra completa */
+}
+
+.table th:nth-child(4),
+.table td:nth-child(4) { /* Nombre */
+  width: 23%;
+}
+
+.table th:nth-child(5),
+.table td:nth-child(5) { /* Capital */
+  width: 20%;
+}
+
+.table th:nth-child(6),
+.table td:nth-child(6) { /* Población */
+  width: 15%;
+}
+
+.table th:nth-child(7),
+.table td:nth-child(7) { /* Información */
+  width: 15%; /* Aumentado para dar más espacio */
+  padding-right: 1.5rem; /* Añadido padding extra a la derecha */
+}
+
+/* Ajustes para los encabezados */
+.table thead th {
+  padding: 1rem 0.5rem; /* Ajustado el padding horizontal */
+  white-space: nowrap; /* Evita que los títulos se partan */
+}
+
+/* El resto de los estilos se mantienen igual */
+.table td {
+  padding: 0.8rem 1rem;
+  vertical-align: middle;
+  background-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .table tbody tr {
@@ -36,13 +91,6 @@
   color: #1a252f;
 }
 
-.table td {
-  padding: 0.8rem 1rem;
-  vertical-align: middle;
-  background-color: transparent;
-}
-
-
 img {
   width: 30px;
   height: auto;
@@ -51,13 +99,14 @@ img {
   background-color: #e9ecef;
 }
 
-
 .table td a {
   color: #3498db;
   text-decoration: none;
   padding: 0.4rem 0.8rem;
   border-radius: 4px;
   transition: all 0.2s ease;
+  display: inline-block;
+  max-width: 100%;
 }
 
 .table td a:hover {
@@ -65,12 +114,10 @@ img {
   color: white;
 }
 
-
 .population-cell {
   font-family: 'Roboto Mono', monospace;
   text-align: right;
 }
-
 
 .alert-warning {
   background-color: #fff3cd;
