@@ -1,0 +1,23 @@
+.phone-code-container {
+  display: inline-block;
+  max-width: 200px;
+  overflow-x: auto;
+  white-space: nowrap;
+  vertical-align: middle;
+  min-height: 24px;
+  line-height: 24px;
+}
+
+.phone-code-container::-webkit-scrollbar {
+  height: 4px;
+  background-color: transparent;
+}
+
+.phone-code-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.phone-code-container::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 2px;
+}
