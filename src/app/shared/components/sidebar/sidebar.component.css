@@ -1,12 +1,12 @@
 .sidebar-container {
-  background-color: #f8f9fa;
+  background-color: #d2dfeb;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 h2 {
-  color: #2c3e50;
+  color: #1a3652;
   font-weight: 600;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
