@@ -8,7 +8,7 @@
 
   <div class="row">
     <div class="col-12">
-      <h2>Pais: <strong class="text-warning">{{ country.name.common }}</strong> </h2>
+      <h2>Pais: <strong class="text-primary">{{ country.name.common }}</strong> </h2>
       <hr>
     </div>
   </div>
@@ -35,7 +35,10 @@
           <strong>Area: </strong> {{ country.area | number }} km²
         </li>
         <li class="list-group-item">
-          <strong>Codigo Numerico: </strong> {{ country.idd.root}} <div class="col phone-code-container">{{country.idd.suffixes}}</div>
+          <strong>Codigo Numerico: </strong>
+          <div class="col phone-code-container">
+            {{ country.idd.root }}{{ country.idd.suffixes }}
+          </div>
         </li>
         <li class="list-group-item">
           <strong>Abreviatura: </strong> {{ country.fifa }}
@@ -63,5 +66,3 @@
   </div>
 
 </div>
-
-

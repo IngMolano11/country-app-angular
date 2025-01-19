@@ -28,8 +28,62 @@ img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
   object-fit: cover;
+}
 
-  &:hover {
-    transform: scale(1.05);
+img:hover {
+  transform: scale(1.05);
+}
+
+.list-group-item {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-group-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.list-group-item strong {
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.list-group-item:hover strong {
+  color: #0056b3;
+}
+
+.phone-code-container {
+  display: inline-block;
+  max-width: 200px;
+  overflow-x: auto;
+  white-space: nowrap;
+  vertical-align: middle;
+  min-height: 24px;
+  line-height: 24px;
+  background-color: #f1f1f1;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.phone-code-container:hover {
+  background-color: #e2e6ea;
+}
+
+.list-group {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
