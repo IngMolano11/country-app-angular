@@ -79,6 +79,26 @@ img:hover {
   animation: fadeIn 0.5s ease-out;
 }
 
+
+.badge {
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+}
+
+.badge:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #0056b3 !important;
+}
+
+.d-flex.flex-wrap {
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -5,6 +5,7 @@ import { SharedModule } from './shared/shared.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CountriesService } from './countries/services/countries.service';
 
 
 
@@ -18,7 +19,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     SharedModule,
   ],
-  providers: [],
+  providers: [CountriesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

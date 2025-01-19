@@ -4,7 +4,7 @@
 
 <ng-template #table>
   <div class="table-container">
-    <table class="table table-hover">
+    <table class="table">
       <thead>
         <tr>
           <th>#</th>
@@ -20,11 +20,17 @@
         <tr *ngFor="let country of countries; let i = index">
           <td>{{ i + 1 }}</td>
           <td>{{ country.flag }}</td>
-          <td><img [src]="country.flags.svg" [alt]="country.name.common"></td>
-          <td>{{ country.name.common }}</td>
+          <td>
+            <img [src]="country.flags.svg"
+                 [alt]="country.name.common"
+                 loading="lazy">
+          </td>
+          <td><strong>{{ country.name.common }}</strong></td>
           <td>{{ country.capital }}</td>
-          <td>{{ country.population | number }}</td>
-          <td><a [routerLink]="['/countries/by', country.cca3]">Ver más...</a></td>
+          <td class="population-cell">{{ country.population | number }}</td>
+          <td>
+            <a [routerLink]="['/countries/by', country.cca3]">Ver más</a>
+          </td>
         </tr>
       </tbody>
     </table>
