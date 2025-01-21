@@ -1,6 +1,5 @@
-
-<h2>Por Region</h2>
-<hr>
+<h2 class="display-6 mb-3 text-primary fw-bold title-section">Por País</h2>
+<hr class="border-2 text-primary">
 
 <div class="bg-white rounded-lg shadow-sm mb-4 text-center">
   <div class="flex flex-wrap justify-content-between p-2 gap-2">
@@ -19,7 +18,7 @@
 
 <div class="row">
   <div class="col">
-    <hr>
+    <hr class="border-2 text-primary">
     <shared-loading-spinner *ngIf="isLoanding"></shared-loading-spinner>
     <countries-table [countries]="countries"></countries-table>
   </div>

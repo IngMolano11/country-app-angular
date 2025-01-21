@@ -1,6 +1,7 @@
-<div class="search-box-container">
+<div class="search-box-container mt-2">
   <input
     type="text"
+    [value]="initialValue"
     [placeholder]="placeholder"
     class="form-control"
     (keyup)="onkeyPress(txtInput.value)"
